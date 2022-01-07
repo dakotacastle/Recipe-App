@@ -1,6 +1,9 @@
 import React, {useEffect, useState} from "react";
 import Recipe from "./Components/Recipe";
 import './App.css';
+import Header from "./Components/Header";
+import About from "./Components/About";
+import Footer from "./Components/Footer";
 
 function App() {
   const APP_ID = "9dc09237";
@@ -35,7 +38,9 @@ function App() {
   }
 
   return (
+ 
     <div className="App">
+      <Header />
        <form 
         onSubmit={getSearch}
         className="search-form">
@@ -51,6 +56,7 @@ function App() {
            Search
          </button>
        </form>
+       
        <div className="recipes">
        {recipes.map(recipe =>(
          <Recipe 
@@ -62,6 +68,9 @@ function App() {
          />
        ))};
        </div>
+       
+       <About />
+       <Footer />
     </div>
   );
 }
