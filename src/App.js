@@ -6,8 +6,7 @@ import About from "./Components/About";
 import Footer from "./Components/Footer";
 
 function App() {
-  const APP_ID = "9dc09237";
-  const APP_KEY = "67841f6ba2f3504990aa01e3cb4617e4";
+  
 
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");
